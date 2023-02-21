@@ -1,0 +1,148 @@
+/**
+ * @name Sleekcord
+ * @version 2.0
+ * @description Sleek Modern UI For Discord
+ * @author Byte Wizard
+ * @authorId 652801938374656013
+ * @source https://github.com/BYT3W1Z4RD/Sleekcord
+ */
+ /*--------------IMPORTS------------- */
+@import url(https://schnensch0.github.io/zelk/main.css);
+@import url(https://discord-custom-covers.github.io/usrbg/dist/usrbg.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
+/*-------------VARIABLES-------------*/
+:root {
+  /* set to 'unset' to show */
+  --scrollbars: none;
+  /* user notes */
+  --notes: none;
+  /* direct message box */
+  --message: none;
+  /* set to '4px solid' to show */
+  --embed-color: #9000ff;
+  /* set to 'Inter', sans-serif !important to use Inter font*/
+  --font-primary: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --border-radius-1: 10px;
+  --border-radius-2: 10px;
+}
+.theme-dark {
+  --accent-color: #9000ff;
+  --background-1: #181818;
+  --background-2: #131313;
+  --background-accent: #202020;
+  --border-color: #9000ff;
+}
+.theme-light {
+  --accent-color: #9000ff;
+  --background-1: #f0f0f0;
+  --background-2: #ffffff;
+  --background-accent: var(--background-2);
+  --border-color: #9000ff;
+}
+.theme-dark {
+  /* background */
+  --background-primary: var(--background-1);
+  --background-primary-alt: var(--background-1);
+  --background-secondary: var(--background-1);
+  --background-secondary-alt: var(--background-1);
+  --background-tertiary: var(--background-2);
+  --background-accent-gradient: var(--background-2);
+  --background-floating: var(--background-1);
+  --background-mentioned: #91919110;
+  --background-mentioned-hover: #d6d6d610;
+  /* modifiers */
+  --background-modifier-hover: #d6d6d610;
+  --background-modifier-active: #91919110;
+  --background-modifier-selected: var(--accent-color);
+  --background-modifier-accent: transparent;
+  --background-message-hover: transparent;
+  /* text */
+  --text-normal: #afafaf;
+  --text-positive: #9000ff;
+  --text-muted: #9000ff;
+  --text-link: #00ecff;
+  --interactive-selected: var(--background-primary);
+  --interactive-active: #9000ff;
+  --interactive-normal: #9000ff;
+  --interactive-muted: var(--button-background-active);
+  --channels-default: #9000ff;
+  --header-primary: var(--text-normal);
+  --header-secondary: var(--text-muted);
+  /* more */
+  --settings-icon-color: #9000ff;
+  --control-brand-foreground: var(--accent-color);
+  --info-warning-foreground: var(--accent-color);
+  --tab-selected: #91919110;
+  --switch: #d6d6d610;
+  --activity-card-background: var(--background-1);
+  --brand-experiment: var(--accent-color) !important;
+  /* buttons */
+  --button-background: #91919110;
+  --button-background-hover: #d6d6d610;
+  --button-background-active: #9000ff;
+  --button-accent: #9000ff;
+  --button-accent-hover: #9000ff;
+  --button-accent-active: #9000ff;
+  --button-destructive: #990000;
+  --button-destructive-hover: #ff0000;
+  --button-destructive-active: #ff0000;
+}
+.theme-light {
+  /* background */
+  --background-primary: var(--background-1);
+  --background-primary-alt: var(--background-1);
+  --background-secondary: var(--background-1);
+  --background-secondary-alt: var(--background-1);
+  --background-tertiary: var(--background-2);
+  --background-accent-gradient: var(--background-2);
+  --background-floating: var(--background-1);
+  --background-mentioned: #00000010;
+  --background-mentioned-hover: #ffffff15;
+  /* modifiers */
+  --background-modifier-hover: transparent;
+  --background-modifier-active: #b7c2cc;
+  --background-modifier-selected: var(--accent-color);
+  --background-modifier-accent: transparent;
+  --background-message-hover: transparent;
+  /* text */
+  --text-normal: #123354;
+  --text-positive: var(--text-normal);
+  --text-muted: #6d6d6d;
+  --text-link: #15a6f0;
+  --interactive-selected: var(--background-primary);
+  --interactive-active: var(--text-normal);
+  --interactive-normal: var(--text-normal);
+  --interactive-muted: var(--text-muted);
+  --channels-default: var(--text-normal);
+  --header-primary: var(--text-normal);
+  --header-secondary: var(--text-muted);
+  /* more */
+  --settings-icon-color: #566e86;
+  --control-brand-foreground: var(--accent-color);
+  --info-warning-foreground: var(--accent-color);
+  --tab-selected: var(--background-1);
+  --switch: #c8d0d9;
+  --activity-card-background: var(--background-1);
+  --brand-experiment: var(--accent-color) !important;
+  /* buttons */
+  --button-background: var(--background-1);
+  --button-background-hover: #d3dae1;
+  --button-background-active: #b1bcc8;
+  --button-accent: var(--accent-color);
+  --button-accent-hover: #22c5fd;
+  --button-accent-active: #0d87c5;
+  --button-destructive: #fb7c7c;
+  --button-destructive-hover: #ff929b;
+  --button-destructive-active: #fa4a4a;
+}
+:root {
+  --outdated-122: none !important;
+}
+.userPopout-2j1gM4[style*="--user-background"] .banner-1YaD3N, .root-8LYsGj[style*="--user-background"] .banner-1YaD3N {
+  height: 120px;
+  background: var(--background-tertiary) var(--user-background) var(--user-popout-position, center) center / cover !important;
+}
+.root-8LYsGj[style*="--user-background"] .banner-1YaD3N {
+  height: 240px;
+}
